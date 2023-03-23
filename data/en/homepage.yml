@@ -1,0 +1,107 @@
+############################# banner ############################
+banner:
+  enable : true
+  title : "no1s1 labs"
+  # content : "For the future of Web3 buildings, living, and hyperlocal communities."
+  content : "For the future of Web3 living in the built environment."
+  image : "images/main.png"
+  button:
+   enable : true
+   label : "Contact Us"
+   link : "mailto:info@no1s1labs.org"
+
+############################# promo ############################
+promo:
+  enable : true
+  image : "images/no1s1.png"
+  title : "The no1s1 Prototype"
+  content : "Our prototype is the first self-owning house on the blockchain."
+  button:
+   enable : true
+   label : "Read More"
+   link : "https://www.no1s1.space"
+
+#################################### Products ########################
+products:
+  enable : false
+  title : "Eindrücke"
+
+
+############################# Feature ############################
+features:
+  enable : true
+  title : "Our Core Principles"
+  image : "images/principles.png"
+
+  # feature at the left of the image
+  left_side:
+    # feature item loop
+  - title : "Perceive nature as a sovereign and regenerative entity."
+    icon : "bx bx-show"
+    content : ""
+    
+    # feature item loop
+  - title : "Support local community building."
+    icon : "bx bx-shape-polygon"
+    content : ""
+
+
+  # feature at the right of the image
+  right_side:
+    # feature item loop
+  - title : "Engineer a living, interactive and intelligent built enviroment."
+    icon : "bx bx-home-alt-2"
+    content : ""
+
+    # feature item loop
+  - title : "Root in parallel currencies & non-monetary values."
+    icon : "bx bx-coin-stack"
+    content : ""
+
+
+############################# Feature2 ############################
+features2:
+  enable : true
+  title : "Our Mission"
+  image : "images/universe.png"
+
+  # feature at the left of the image
+  left_side:
+    # feature item loop
+  - title : "Education"
+    #icon : "tf-ion-ios-alarm-outline"
+    content : "We educate through artifacts, exhibition and talks about different aspects of Web3 in the built environment. With that we want to make the Web3 living movement tangible."
+    
+  #   # feature item loop
+  # - title : "Engineering"
+  #   #icon : "tf-ion-ios-bell-outline"
+  #   content : "Web3 tooling for hyperlocal communities."
+
+
+  # feature at the right of the image
+  right_side:
+    # feature item loop
+  - title : "Research"
+    #icon : "tf-ion-ios-alarm-outline"
+    content : "We investigate and engineer prototypes, tooling and concepts to move forward Web3 in the built environment; always having our core principles in mind."
+
+  #   # feature item loop
+  # - title : "Living labs"
+  #   #icon : "tf-ion-ios-bell-outline"
+  #   content : "artifacts, exhibition and radical experiments"
+
+################################## List ###################
+# list:
+#   enable : true
+#   title : "Our Mission"
+#   content : "
+#   Making the web3 lifestyle movement tangible.
+#   <br><br>
+#   "
+#   content2 : "
+#   One person at a time.
+#   <br><br>
+#   One building at a time.
+#   <br><br>
+#   One community at a time.
+#   "

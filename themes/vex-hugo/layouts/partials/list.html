@@ -1,0 +1,21 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{- if $data.homepage.list.enable }}
+{{- with $data.homepage.list }}
+
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 text-center mb-5">
+        <h1 class="font-weight-bold">{{.title}}</h1>
+      </div>
+      <div class="col-lg-10 mb-5">
+          <h4 class="font-weight-bold mb-2" style="text-align: center">{{ .content | markdownify }}</h4>
+          <p style="text-align: center">{{ .content2 | markdownify }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{- end }}
+{{- end }}

@@ -1,0 +1,54 @@
+{{ define "main" }}
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.about.testimonial.enable }}
+<section class="testimonials section" id="testimonial">
+  <div class="container">
+    {{ with $data.about.testimonial }}
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <div class="content">
+          <h2 class="font-weight-bold mb-4 font-size-40 text-center">{{ .title | markdownify }}</h2>
+          <p class="mb-4" style="text-align: center">{{ .content | markdownify }}</p>
+          <p></p>
+        </div>
+      </div>
+      {{ range .testimonial_item }}
+      <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0 text-center">
+        <div class="testimonial-block">
+          <!--<i class="tf-ion-quote"></i>-->
+          <div class="author-details">
+            <img src="{{ .image | absURL }}" alt="{{ .name }}">
+            <h4>{{ .name }}</h4>
+            <span>{{ .designation }}</span>
+            <p>{{ .content | markdownify }}</p>
+            <p>
+              {{ if .email }}
+              <a target="_blank" rel="noopener noreferrer" href="{{ .email }}">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </a>
+              {{ end }}
+              {{ if .linkedin }}
+              <a target="_blank" rel="noopener noreferrer" href="{{ .linkedin }}">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+              </a>
+              {{ end }}
+              {{ if .website }}
+              <a target="_blank" rel="noopener noreferrer" href= "{{ .website }}">
+                <i class="fas fa-globe" aria-hidden="true"></i>
+              </a>
+              {{ end }}
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ end }}
