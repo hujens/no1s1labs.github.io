@@ -1,0 +1,39 @@
+############################## Testimonial ##########################
+testimonial:
+  enable : true
+  title : "Team"
+  content : "" 
+  testimonial_item:
+
+      # testimonial item loop
+    - name : "Hongyang Wang"
+      designation : "Founder"
+      image : "images/avatars/hongyang.jpeg"
+      content : ""
+      #email: "mailto:lukas.ruegsegger@nellys.ch"
+      linkedin: "https://www.linkedin.com/in/hongyang-una-wang-36b56b22/"
+
+    # testimonial item loop
+    - name : "Dr. Jens Hunhevicz"
+      designation : "Founder"
+      image : "images/avatars/jens.jpeg"
+      content : ""
+      #email: "mailto:jens.hunhevicz@nellys.ch"
+      linkedin: "https://www.linkedin.com/in/jenshunhevicz/"
+      # website: "https://www.hunhevicz.ch"
+
+    # testimonial item loop
+    - name : "Prof. Dr. Daniel Hall"
+      designation : "Advisor"
+      image : "images/avatars/daniel.jpeg"
+      content : ""
+      #email: "mailto:lukas.ruegsegger@nellys.ch"
+      linkedin: "https://www.linkedin.com/in/dhall12/"
+  
+    # testimonial item loop
+    - name : "Malik El Bay"
+      designation : "Advisor"
+      image : "images/avatars/malik.jpeg"
+      content : ""
+      #email: "mailto:lukas.ruegsegger@nellys.ch"
+      linkedin: "https://www.linkedin.com/in/malikelbay/"

@@ -1,0 +1,39 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{- if $data.homepage.banner.enable }}
+{{- with $data.homepage.banner }}
+<!-- hero area -->
+<section class="section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5 text-center mb-5 mb-md-0">
+				<img class="img-fluid" src="{{ .image | absURL }}" alt="">
+			</div>
+			<div class="col-md-7 align-self-center text-center text-md-left">
+				<div class="block">
+					<h1 class="font-weight-bold mb-4 font-size-60">{{ .title | markdownify }}</h1>
+					<p class="mb-4">{{ .content | markdownify }}</p>
+					<!--<p></p>
+					<p>
+						<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/">
+							{{ partial "fontawesome.html" "facebook-square" }}
+						</a>
+						<a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/">
+							{{ partial "fontawesome.html" "instagram-square" }}
+						</a>
+						<a target="_blank" rel="noopener noreferrer" href="https://www.tripadvisor.com/">
+							{{ partial "fontawesome.html" "tripadvisor" }}
+						</a>
+					</p>-->
+					{{ if .button.enable }}
+					{{ with .button }}
+					<a href="{{.link|absLangURL}}" class="btn btn-main2">{{.label}}</a>
+					{{ end }}
+					{{ end }}
+				</div>
+			</div>
+		</div><!-- .row close -->
+	</div><!-- .container close -->
+</section><!-- header close -->
+{{- end }}
+{{- end }}

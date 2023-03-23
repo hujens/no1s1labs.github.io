@@ -1,0 +1,40 @@
+<head>
+  <meta charset="utf-8">
+  <base href="/">
+  <title>{{ .Title }}</title>
+
+  {{ "<!-- mobile responsive meta -->" | safeHTML }}
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
+  {{ with site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+  {{ hugo.Generator }}
+
+  {{ "<!-- plugins -->" | safeHTML }}
+  {{ range site.Params.plugins.css }}
+  <link rel="stylesheet" href="{{ .link | absURL }} ">
+  {{ end }}
+
+  {{ "<!-- Main Stylesheet -->" | safeHTML }}
+  {{ $styles := resources.Get "scss/style.scss" | toCSS | minify }}
+  <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+
+  {{ "<!--Favicon-->" | safeHTML }}
+  <link rel="shortcut icon" href="{{ `images/favicon.ico` | absURL }} " type="image/x-icon">
+  <link rel="icon" href="{{ `images/favicon.ico` | absURL }} " type="image/x-icon">
+
+  {{ with .Params.image }}
+  <meta property="og:image" content="{{ . | absURL }}" />
+  {{ end }}
+  {{ template "_internal/opengraph.html" . }}
+  {{ template "_internal/google_analytics_async.html" . }}
+
+  <link rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+  integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+  crossorigin="anonymous" />
+  <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+</head>
