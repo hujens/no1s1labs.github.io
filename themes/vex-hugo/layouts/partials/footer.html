@@ -4,20 +4,11 @@
       <div class="col-md-12">
         <div class="block">
           <a href="{{ site.BaseURL | relLangURL }}" class="mb-4 d-inline-block">{{ if site.Params.logo }} <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" {{with site.Params.logo_width}}width="{{.}}"{{end}}> {{ else }} {{ .Title }} {{ end }}</a>
-          <!--<p>
-						<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/">
-							{{ partial "fontawesome.html" "facebook-square" }}
+          <p>
+						<a target="_blank" rel="noopener noreferrer" href="https://github.com/no1s1labs">
+							{{ partial "fontawesome.html" "github-square" }}
 						</a>
-						<a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/">
-							{{ partial "fontawesome.html" "instagram-square" }}
-						</a>
-						<a target="_blank" rel="noopener noreferrer" href="https://www.tripadvisor.com/">
-							{{ partial "fontawesome.html" "tripadvisor" }}
-						</a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/">
-							{{ partial "fontawesome.html" "linkedin" }}
-						</a>
-					</p>-->
+					</p>
           <ul class="list-inline footer-menu">
             {{ range site.Menus.footer }}
             <li class="list-inline-item">
