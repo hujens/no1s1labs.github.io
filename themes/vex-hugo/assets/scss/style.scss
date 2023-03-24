@@ -687,6 +687,12 @@ textarea.form-control {
   top: 0.15rem;
   position: relative;
   padding: 0 5px;
+  color: #685779;
+
+  &:hover {
+    text-decoration: none;
+    color: #E05C33;
+  }
 }
 
 .promo {
