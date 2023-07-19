@@ -13,10 +13,10 @@
 				<div class="block">
 					<h1 class="font-weight-bold mb-4 font-size-60">{{ .title | markdownify }}</h1>
 					<p class="mb-4">{{ .content | markdownify }}</p>
-					<!--<p></p>
+					<!-- <p></p>
 					<p>
-						<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/">
-							{{ partial "fontawesome.html" "facebook-square" }}
+						<a target="_blank" rel="noopener noreferrer" href="https://github.com/no1s1labs">
+							{{ partial "fontawesome.html" "github-square" }}
 						</a>
 						<a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/">
 							{{ partial "fontawesome.html" "instagram-square" }}
@@ -24,7 +24,7 @@
 						<a target="_blank" rel="noopener noreferrer" href="https://www.tripadvisor.com/">
 							{{ partial "fontawesome.html" "tripadvisor" }}
 						</a>
-					</p>-->
+					</p> -->
 					{{ if .button.enable }}
 					{{ with .button }}
 					<a href="{{.link|absLangURL}}" class="btn btn-main2">{{.label}}</a>

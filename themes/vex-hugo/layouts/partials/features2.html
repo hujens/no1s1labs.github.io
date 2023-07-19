@@ -10,7 +10,7 @@
           <h2>{{ .title | markdownify }}</h2>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-6 align-self-center text-center text-md-left">
         {{ range .left_side }}
         <div class="mb-40 text-center text-md-left">
           <i class="d-inlin-block h2 mb-10 {{ .icon }}"></i>
@@ -19,10 +19,10 @@
         </div>
         {{ end }}
       </div>
-      <div class="col-md-4 text-center align-self-center mb-4 mb-md-0">
+      <div class="col-md-6 text-center mb-5">
         <img class="img-fluid" src="{{ .image | absURL }}" alt="">
       </div>
-      <div class="col-md-4">
+      <!-- <div class="col-md-4">
           {{ range .right_side }}
         <div class="mb-40 text-center text-md-left">
           <i class="d-inlin-block h2 mb-10 {{ .icon }}"></i>
@@ -30,7 +30,7 @@
           <p>{{ .content | markdownify }}</p>
         </div>
         {{ end }}
-      </div>
+      </div> -->
     </div>
   </div><!-- .container close -->
 </section>
