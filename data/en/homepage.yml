@@ -17,6 +17,8 @@ promo:
   #image : "images/main.gif"
   title : "Decentralized Living"
   content : "No1s1 labs explores alternative approaches to land and buildings for a common regenerative future. We research, build and facilitate the movement towards networked common lands and autonomous self-managed buildings. 
+            <br><br>
+            We call this vision decentralized living.
             "
 
             # <br><br>
@@ -31,27 +33,27 @@ features:
   # feature at the left of the image
   left_side:
     # feature item loop
-  - title : "Perceive nature as a sovereign and regenerative entity."
+  - title : ""
     icon : "bx bx-show"
-    content : ""
+    content : "Perceive nature as a sovereign and regenerative entity."
     
     # feature item loop
-  - title : "Support local community building."
+  - title : ""
     icon : "bx bx-shape-polygon"
-    content : ""
+    content : "Support local community building."
 
 
   # feature at the right of the image
   right_side:
     # feature item loop
-  - title : "Engineer a living, interactive and intelligent built enviroment."
+  - title : ""
     icon : "bx bx-home-alt-2"
-    content : ""
+    content : "Engineer a living, interactive and intelligent built enviroment."
 
     # feature item loop
-  - title : "Root in parallel currencies & non-monetary values."
+  - title : ""
     icon : "bx bx-coin-stack"
-    content : ""
+    content : "Root in parallel currencies & non-monetary values."
 
 
 ############################# Feature 2 ############################
@@ -87,7 +89,7 @@ promo2:
   enable : true
   image : "images/no1s1.png"
   title : "The no1s1 Prototype"
-  content : "no1s1 manages itself through smart contracts using blockchain technology. This allows for autonomous ownership of funds and decision-making, making  no1s1 the world's first self-owned blockchain house. It pioneers a unique concept: a house that belongs to no one, yet is accessible to all."
+  content : "no1s1 manages itself through smart contracts using blockchain technology. This allows for autonomous ownership of funds and decision-making, making no1s1 the world's first self-owned house. It pioneers a unique concept: a house that belongs to no one, yet is accessible to all."
   button:
    enable : false
    label : "Read More"
