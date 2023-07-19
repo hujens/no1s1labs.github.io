@@ -1,7 +1,7 @@
-############################## Testimonial ##########################
+############################## Testimonial 1 ##########################
 testimonial:
   enable : true
-  title : "Team"
+  title : "Founding Team"
   content : "" 
   testimonial_item:
 
@@ -10,7 +10,6 @@ testimonial:
       designation : "Founder"
       image : "images/avatars/hongyang.jpeg"
       content : ""
-      #email: "mailto:lukas.ruegsegger@nellys.ch"
       linkedin: "https://www.linkedin.com/in/hongyang-una-wang-36b56b22/"
 
     # testimonial item loop
@@ -18,16 +17,21 @@ testimonial:
       designation : "Founder"
       image : "images/avatars/jens.jpeg"
       content : ""
-      #email: "mailto:jens.hunhevicz@nellys.ch"
       linkedin: "https://www.linkedin.com/in/jenshunhevicz/"
-      # website: "https://www.hunhevicz.ch"
+
+
+############################## Testimonial 2 ##########################
+testimonial2:
+  enable : true
+  title : "Advisor"
+  content : "" 
+  testimonial_item:
 
     # testimonial item loop
     - name : "Prof. Dr. Daniel Hall"
       designation : "Advisor"
       image : "images/avatars/daniel.jpeg"
       content : ""
-      #email: "mailto:lukas.ruegsegger@nellys.ch"
       linkedin: "https://www.linkedin.com/in/dhall12/"
   
     # testimonial item loop
@@ -35,5 +39,19 @@ testimonial:
       designation : "Advisor"
       image : "images/avatars/malik.jpeg"
       content : ""
-      #email: "mailto:lukas.ruegsegger@nellys.ch"
       linkedin: "https://www.linkedin.com/in/malikelbay/"
+
+
+############################## Testimonial 3 ##########################
+testimonial3:
+  enable : true
+  title : "Partners"
+  content : "" 
+  testimonial_item:
+
+    # testimonial item loop
+    - name : "Dezentrum"
+      designation : "Partner"
+      image : "images/avatars/dezentrum.jpg"
+      content : ""
+      website: "https://www.dezentrum.ch/en/"
