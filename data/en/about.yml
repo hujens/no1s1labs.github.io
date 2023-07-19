@@ -23,7 +23,7 @@ testimonial:
 ############################## Testimonial 2 ##########################
 testimonial2:
   enable : true
-  title : "Advisor"
+  title : "Advisors"
   content : "" 
   testimonial_item:
 
