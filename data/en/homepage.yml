@@ -3,35 +3,30 @@ banner:
   enable : true
   title : "no1s1 labs"
   # content : "For the future of Web3 buildings, living, and hyperlocal communities."
-  content : "Living labs for the future of Web3 in the built environment."
-  image : "images/main.png"
+  content : "For a future of decentralized living."
+  image : "images/main.gif"
   button:
    enable : true
    label : "Contact Us"
    link : "mailto:info@no1s1labs.org"
 
+
 ############################# promo ############################
 promo:
   enable : true
-  image : "images/no1s1.png"
-  title : "The no1s1 Prototype"
-  content : "It is the first self-owning house on the blockchain."
-  button:
-   enable : true
-   label : "Read More"
-   link : "https://www.no1s1.space"
+  #image : "images/main.gif"
+  title : "Decentralized Living"
+  content : "No1s1 labs explores alternative approaches to land and buildings for a common regenerative future. We research, build and facilitate the movement towards networked common lands and autonomous self-managed buildings. 
+            "
 
-#################################### Products ########################
-products:
-  enable : false
-  title : "Eindrücke"
+            # <br><br>
+            # Test2
 
-
-############################# Features 2 ############################
-features2:
+############################# Features ############################
+features:
   enable : true
-  title : "Our Core Principles"
-  image : "images/principles.png"
+  title : "Values"
+  image : "images/graphic2.png"
 
   # feature at the left of the image
   left_side:
@@ -59,26 +54,45 @@ features2:
     content : ""
 
 
-############################# Feature ############################
-features:
+############################# Feature 2 ############################
+features2:
   enable : true
-  title : "Our Mission"
-  image : "images/universe.png"
+  title : "no1s1 labs Mission"
+  image : "images/graphic3.png"
 
   # feature at the left of the image
   left_side:
     # feature item loop
   - title : "Research"
     #icon : "tf-ion-ios-alarm-outline"
-    content : "We research and develop prototypes, tools, and concepts to advance ideas around Web3 in the built environment, always keeping our core principles in mind."
+    content : "We conduct research to advance our theoretical understanding of Web3 in the built environment. Topics include crypto-commons, regenerative development, and DAO governance in the AEC industry."
+  - title : "Experiments"
+    #icon : "tf-ion-ios-alarm-outline"
+    content : "We fast-prototype to learn hands-on from experiments. This helps us explore alternative ways of living and makes the Web3 movement tangible."
+  - title : "Facilitation"
+    #icon : "tf-ion-ios-alarm-outline"
+    content : "We want to inspire others by communicating about our learnings, facilitating people around the world to collectively build a future built environment aligned with the values of decentralized living."
 
 
   # feature at the right of the image
-  right_side:
-    # feature item loop
-  - title : "Education"
-    #icon : "tf-ion-ios-alarm-outline"
-    content : "We educate about fascinating aspects of Web3 in the built environment through talks and the exhibition of our prototypes. In this way, we want to make the Web3 movement tangible."
+  # right_side:
+  #   # feature item loop
+  # - title : "Facilitation"
+  #   #icon : "tf-ion-ios-alarm-outline"
+  #   content : "We educate about fascinating aspects of Web3 in the built environment through talks and the exhibition of our prototypes. In this way, we want to make the Web3 movement tangible."
+
+############################# promo2 ############################
+
+promo2:
+  enable : true
+  image : "images/no1s1.png"
+  title : "The no1s1 Prototype"
+  content : "no1s1 manages itself through smart contracts using blockchain technology. This allows for autonomous ownership of funds and decision-making, making  no1s1 the world's first self-owned blockchain house. It pioneers a unique concept: a house that belongs to no one, yet is accessible to all."
+  button:
+   enable : false
+   label : "Read More"
+   link : "https://github.com/no1s1labs/no1s1"
+
 
 ################################## List ###################
 # list:
